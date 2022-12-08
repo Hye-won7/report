@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> {{r.id}} 리뷰 수정 </h1>
+<form action="updaterecord/{{r.id}}" method="post">
+    {% csrf_token %}
+    닉네임: <input type="text" name="name" id="" value="{{r.name}}"><br>
+    리뷰: <input type="text" name="content" id="" value="{{r.content}}"><br>
+    <input type="submit" value="리뷰수정">
+    <input type="reset" value="취소">
+</form>
+{% endblock %}

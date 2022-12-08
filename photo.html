@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michinmagchang Gallery</title>
+    <link rel="stylesheet" href="{% static 'mystyle_p.css' %}">
+</head>
+<body>
+    {% include "header_p.html" %}
+    </header>
+    <section>
+        <div class="imglist">
+            <table>
+                <tr>
+                    <img src="{% static './images/막창1.jpg' %}" alt="" class="image img1">
+                    <img src="{% static './images/막창2.jpg' %}" alt="" class="image img2">
+                </tr>
+                <tr>   
+                    <img src="{% static './images/막창3.jpg' %}" alt="" class="image img3">
+                    <img src="{% static './images/막창4.jpg' %}" alt="" class="image img4">
+                </tr>
+                <tr>    
+                    <img src="{% static './images/막창5.jpg' %}" alt="" class="image img5">
+                    <img src="{% static './images/막창6.jpg' %}" alt="" class="image img6">
+                </tr>
+                <tr>
+                    <img src="{% static './images/막창7.jpg' %}" alt="" class="image img7">
+                    <img src="{% static './images/막창8.jpg' %}" alt="" class="image img8">
+                </tr>    
+                <tr>
+                    <img src="{% static './images/막창9.jpg' %}" alt="" class="image img9">
+                    <img src="{% static './images/볶음밥1.jpg' %}" alt="" class="image img10">
+                </tr>
+                <tr>
+                    <img src="{% static './images/볶음밥2.jpg' %}" alt="" class="image img11">
+                    <img src="{% static './images/볶음밥3.jpg' %}" alt="" class="image img12">
+                </tr>
+                <tr>
+                    <img src="{% static './images/계란찜.jpg' %}" alt="" class="image img13">
+                </tr>
+            </table>    
+        </div>
+        <div class="bookmark">
+            <a href="/">홈</a>
+        </div>   
+    </section>
+</body>
+</html>

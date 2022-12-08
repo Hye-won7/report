@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Hyewon World</title>
+    <link rel="stylesheet" href="{% static 'mystyle_h.css' %}">
+</head>
+<body>
+    {% include "header.html" %}
+    <section>
+        <article>
+            <div class="info">
+                <img src="{% static './images/막창2.jpg' %}" alt="사진 없음">
+                <ul>
+                    <li>손님을 속이거나 손님을 이기려고 하면 <br>
+                    일시적으로 수익을 낼 수는 있겠지만 결코 오래가지 않는다.</li>
+                    <li>'장사는 정직한 게임이다'</li>
+                </ul>
+            </div>
+            <div class="manage">
+                <ul>
+                    <li>주소: 부산광역시 중구 흑교로35번길 5</li>
+                    <li>전화번호: 010-****-####</li>
+                    <li>영업시간: 14:30 ~ 01:00</li>
+                </ul>
+            </div>
+            <div class="member">
+                <h2>직원 연락처</h2>
+                <table border="1">
+                    <tr>
+                        <th>직급</th>
+                        <th>이름</th>
+                        <th>연락처</th>
+                    </tr>
+                    <tr>
+                        <td>사장</td>
+                        <td>박인호</td>
+                        <td>010-1234-5678</td>
+                    </tr>
+                    <tr>
+                        <td>점장</td>
+                        <td>이건희</td>
+                        <td>010-8765-4321</td>
+                    </tr>
+                    <tr>
+                        <td>매니저</td>
+                        <td>김혜원</td>
+                        <td>010-7373-8142</td>
+                    </tr>
+                 </table>
+            </div>
+            <div class="more">
+                <h2>더 많은 정보가 알고싶다면?</h2>
+                <a href="https://map.naver.com/v5/search/%EB%AF%B8%EC%B9%9C%EB%A7%89%EC%B0%BD/place/1252664246?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true&c=14362496.7515117,4177830.3538901,15,0,0,0,dh" target="_blank">미친막창</a>
+            </div>
+        </article>    
+    </section>
+    {% include "footer.html" %}
+</body>
+</html>

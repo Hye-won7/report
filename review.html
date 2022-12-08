@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1> 리뷰 </h1>
+    <table class="w3-table w3-bordered">
+        <tr>
+            <th> ID </th>
+            <th> 닉네임 </th>
+            <th> 리뷰 </th>
+            <th> 기능 </th>
+        </tr>
+        {% for x in r %}
+        <tr>
+            <td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+            <td> {{ x.name }} </td>
+            <td> {{ x.content }} </td>
+            <td><a href="delete/{{ x.id }}"> 삭제 </a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <button><a href="add/"> 리뷰쓰기 </a></button>
+{% endblock %}

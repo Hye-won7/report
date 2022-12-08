@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> 리뷰 작성 </h1>
+<form action="addrecord" method="post" class="w3-container">
+    {% csrf_token %}
+    닉네임 : <input type="text" name="name" id="" class="w3-input"><br>
+    리뷰 : <input type="text" name="content" id="" class="w3-input"><br>
+    <br>
+    <input type="submit" value="게시하기">
+    <input type="reset" value="취소">
+</form>
+{% endblock %}
